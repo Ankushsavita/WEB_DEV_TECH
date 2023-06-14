@@ -5,24 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drool Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
       <main class="sec">
 
          <!-- ---------=--- NAVBAR-SECTION ------------- -->
-        <div class="nav">
-            <div class="img">
-                <img src="./images/logo.png" alt="">
-            </div>
-            <div class="tags">
-                <a href="#home">HOME</a>
-                <a href="#about">ABOUT</a>
-                <a href="#gallery">GALLERY</a>
-                <a href="#contactus">CONTACT US</a>
-                <a href="#supportus">SUPPORT US</a>
-            </div>
-        </div>
+
+        <nav>
+            <img src="./images/logo.png" alt="">
+            <input type="checkbox" name="" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="toggle"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">PortFolio</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
     
            <!-- -------------- HOME-SECTION --------------- -->
            <div class="home">
@@ -33,8 +38,8 @@
                      <h1 id="h1">Pet And Animal</h1>
                      <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                      <div class="btn">
-                         <button id="bt1">Read More</button>
-                         <button id="bt2">Contact Us</button>
+                         <button id="btn1">Read More</button>
+                         <button id="btn2">Contact Us</button>
                      </div>
                     </div>
                 </div>
@@ -54,7 +59,7 @@
            </div>
 
            <!-- --------------------- ANIMATION-SECTION -------------------- -->
-            <div class="animate-sec">
+             <div class="animate-sec">
                 <div class="inner-animate">
                     <div class="anim-1">
                         <img src="./images/dog.jpg" alt="">
@@ -111,15 +116,15 @@
                 </div>
 
                 <div class="circle-img">
-                    <div>
+                    <div class="omega">
                         <img src="images/omega.png">
                         <h4>PET NUTRITIONISTS</h4>
                     </div>
-                    <div>
+                    <div class="dogAnim">
                         <img src="images/dog.png">
                         <h4 id="h4">STANDARDS</h4>
                     </div>
-                    <div>
+                    <div class="shield">
                         <img src="images/shield.png">
                         <h4>QUALITY & SAFETY</h4>
                     </div>
@@ -139,26 +144,26 @@
                         <h1>Our Dog Food</h1>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a </p>
                     </div>
-                    <div class="dog-food_2">
-                        <img src="./images/f1.png" alt="">
-                        <img src="./images/f2.png" alt="">
-                        <img src="./images/f3.png" alt="">
+                     <div class="dog-food_2">
+                        <img class="mg1" src="./images/f1.png" alt="">
+                        <img class="mg2"  src="./images/f2.png" alt="">
+                        <img class="mg3" src="./images/f3.png" alt="">
                     </div>
                     <div class="food-rate">
-                        <div>
-                            <p>BASIC</p>
-                            <h2><span>$</span>100</h2>
-                            <button>Buy Now</button>
+                        <div class="rate1">
+                            <p id="base">BASIC</p>
+                            <h2 id="spa"><span>$</span>100</h2>
+                            <button id="buy_1">Buy Now</button>
                         </div>
-                        <div>
-                            <p>MEDIUM</p>
-                            <h2><span>$</span>200</h2>
-                            <button>Buy Now</button>
+                        <div class="rate2">
+                            <p id="base2">MEDIUM</p>
+                            <h2 id="spa2"><span>$</span>200</h2>
+                            <button id="buy_2">Buy Now</button>
                         </div>
-                        <div>
-                            <p>STANDARD</p>
-                            <h2 id="sp"><span>$</span>300</h2>
-                            <button>Buy Now</button>
+                        <div class="rate3">
+                            <p id="base3">STANDARD</p>
+                            <h2 class="spa3" id="sp"><span>$</span>300</h2>
+                            <button id="buy_3">Buy Now</button>
                         </div>
                         
                     </div>

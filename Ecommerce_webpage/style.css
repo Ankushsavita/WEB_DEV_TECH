@@ -1,0 +1,1059 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------- BANNER-SECTION ------------------------ */
+.main .banner-section{
+    width: 100%;
+    height: 100vh;
+    background: url('./images/banner-bg.png')  no-repeat ;
+    background-size: cover;
+}
+
+.banner-section .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    background-color:rgb(48,48,46);
+    color: white;
+    clip-path: polygon(0 0 , 100% 0%, 96% 100%, 4% 100%);
+}
+
+.banner-section .header .inner-head{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.banner-section .header a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.banner-section .header a:hover{
+    color: rgb(242,101,34);
+}
+
+.banner-section .menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 35vh;
+    margin: auto;
+}
+
+.banner-section .menu .heading img{
+   transform: translate(0,15px);
+   cursor: pointer;
+}
+
+.banner-section .menu .inner-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+.banner-section .menu .inner-menu .img img{
+    cursor: pointer;
+}
+
+.banner-section .menu .inner-menu .dropdown{
+    position: relative;
+}
+
+.banner-section .menu .inner-menu .dropdown .dropbtn{
+    background-color:rgb(48,48,46);
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.banner-section .menu .inner-menu .dropdown .dropdown-content{
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    font-size: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 5px;
+    border-radius: 8px;
+}
+
+.banner-section .menu .inner-menu .dropdown .dropdown-content a{
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.banner-section .menu .inner-menu .dropdown .dropdown-content a:hover{
+    background-color: rgb(245,245,245);
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.banner-section .inner-menu .input{
+    width: 500px;
+    height: 6vh;
+    position: relative;
+}
+
+.banner-section .inner-menu .input input{
+    width: 460px;
+    height: 6vh;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+
+.banner-section .inner-menu .input input::placeholder{
+    font-size: 18px;
+    transform: translate(20px,2px);
+}
+
+.banner-section .inner-menu .input button{
+    width: 36px;
+    height: 6vh;
+    background-color: rgb(242,101,34);
+    border: none;
+    position: absolute;
+    left: calc(95% - 51px);
+    cursor: pointer;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.banner-section .inner-menu .lang{
+    width: 110px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.banner-section .inner-menu .lang .toggle{
+    display: inline-block;
+    width: 110px;
+    height: 40px;
+    background-color: white;
+    border-radius: 8px;
+    transform: translate(0px,30px);
+    font-size: 16px;
+}
+
+.banner-section .inner-menu .lang .toggle p{
+    font-size: 16px;
+    transform: translate(40px, -9px);
+}
+
+.banner-section .inner-menu .lang .toggle p img{
+    transform: translate(10px, 0px);
+}
+
+.banner-section .inner-menu .lang summary{
+    transform: translate(5px,10px);
+    font-size: 16px;
+}
+
+.banner-section .inner-menu .lang summary:hover{
+    cursor: pointer;
+    color: rgb(242,101,34);
+}
+
+.banner-section .inner-menu .lang summary img{
+    transform: translate(10px,0px);
+}
+.banner-section .inner-menu .lang img{
+    width: 15px;
+    transform: translate(10px,10px);
+}
+
+.banner-section .inner-menu .shop{
+    width: 150px;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.banner-section .inner-menu .shop i{
+    color: white;
+    margin: 2px;
+}
+
+.banner-section .inner-menu .shop img{
+    color: white;
+    margin: 2px;
+    transform: translate(-3px,5px);
+}
+
+.banner-section .inner-menu .shop span{
+    font-size: 16px;
+    margin: 3px;
+    color: white;
+}
+
+.banner-section .inner-menu .shop span:hover{
+    color: rgb(242,101,34);
+}
+
+.banner-section .inner-menu .shop span i:hover{
+    color: rgb(242,101,34);
+}
+
+.banner-section .inner-menu .shop span img:hover{
+    color: rgb(242,101,34);
+}
+
+.banner-section .shopping{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    height: 65vh;
+}
+
+.banner-section .shopping .arr1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: inherit;
+}
+
+.banner-section .shopping .arr1 button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 15px;
+    border: none;
+    background-color: rgb(239,214,151);
+    cursor: pointer;
+    transform: translate(-30px,-70px);
+}
+
+.banner-section .shopping .arr1 button:hover{
+    color: white;
+}
+
+.banner-section .shopping .arr2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: inherit;
+}
+
+.banner-section .shopping .arr2 button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 15px;
+    border: none;
+    background-color: rgb(239,214,151);
+    cursor: pointer;
+    transform: translate(30px,-70px);
+}
+
+.banner-section .shopping .arr2 button:hover{
+    color: white;
+}
+
+.banner-section .shopping .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: inherit;
+}
+
+.banner-section .shopping .content h1{
+    font-size: 65px;
+    color: white;
+    transform: translate(0,10px);
+}
+
+.banner-section .shopping .content #h1{
+    font-size: 62px;
+    color: white;
+    transform: translate(0,-10px);
+}
+
+.banner-section .shopping .content button{
+    padding: 15px 45px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(37,37,37) ;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: translate(0,-30px);
+}
+
+.banner-section .shopping .content button:hover{
+    background-color: rgb(242,101,34);
+}
+
+/* -------------FASHION-CARD-SECTION -----------*/
+.main .fashion{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: 120vh;
+}
+
+.main .fashion h1{
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    line-height: 10vh;
+    font-size: 50px;
+    color: rgb(37,37,37) ;
+    transform: translate(0,10px);
+}
+
+.main .fashion .card{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(245,245,245);
+    box-shadow: 0 0 200px  rgb(245,245,245);
+}
+
+.main .fashion .card .fashionCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 31%;
+    height: inherit;
+    background-color: white;
+}
+
+.main .fashion .card .fashionCard .title{
+    text-align: center;
+    width: 80%;
+    height: 8vh;
+}
+
+.main .fashion .card .fashionCard .title h3{
+    color: rgb(37,37,37) ;
+    font-size: 21px;
+    font-weight: 1500;
+}
+
+.main .fashion .card .fashionCard .title p{
+    color: rgb(37,37,37) ;
+    font-size: 20px;
+}
+
+.main .fashion .card .fashionCard .title span{
+    color: rgb(242,101,34);
+}
+
+.main .fashion .card .fashionCard .tag{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 5vh;
+    transform: translate(0, -5px);
+}
+
+.main .fashion .card .fashionCard .tag a{
+    text-decoration: none;
+    color: rgb(242,101,34);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.main .fashion .card .fashionCard .tag a:hover{
+    color: rgb(37,37,37) ;
+    cursor: pointer;
+}
+
+.main .fashion .card .fashionCard .tag #a{
+    text-decoration: none;
+    color: rgb(37,37,37) ;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.main .fashion .card .fashionCard .tag #a:hover{
+    cursor: pointer;
+    color: rgb(242,101,34);
+}
+
+.main .fashion .btn{
+    text-align: center;
+    line-height: 10vh;
+    width: 100%;
+    height: 10vh;
+}
+
+.main .fashion .btn button{
+    width: 55px;
+    height: 55px;
+    background-color: rgb(37,37,37) ;
+    color: white;
+    border: none;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.main .fashion .btn button:hover{
+   background-color: rgb(242,101,34);
+}
+
+.main .electronics{
+    transform: translate(0,50px);
+}
+
+.main .jewellery{
+    transform: translate(0,100px);
+}
+
+/* ---------------- LOADER-SECTION ------------------ */
+.main .loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 20%;
+    height: 30vh;
+    transform: translate(0,150px);
+}
+
+.main .loader .load{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 15px solid rgb(37,37,37) ;
+    border-bottom: 15px solid rgb(242,101,34);
+    border-top: 15px solid rgb(242,101,34);
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* -------------------- FOOTER-SECTION ------------------ */
+.main .footer{
+    width: 100%;
+    height: 60vh;
+    transform: translate(0,200px);
+    background-color: rgb(37,37,37);
+}
+
+.main .footer .foot{
+    margin: auto;
+    width: 55%;
+    height: 50vh;
+    transform: translate(0,40px);
+}
+
+.main .footer .foot .logo{
+    text-align: center;
+}
+
+.main .footer .foot .input{
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid white;
+}
+
+.main .footer .foot .input input{
+    width: 79%;
+    height: 10vh;
+    border: 1px solid white;
+    border: none;
+    outline: none;
+    background-color: rgb(37,37,37);
+}
+
+.main .footer .foot .input input::placeholder{
+    font-size: 20px;
+    color: white;
+}
+
+.main .footer .foot .input button{
+    width: 20%;
+    height: 10vh;
+    border: 1px solid white;
+    border: none;
+    background-color: rgb(37,37,37);
+    color: rgb(242,101,34);
+}
+
+.main .footer .foot .input button:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.main .footer .foot .foot-link{
+    margin: auto;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main .footer .foot .foot-link a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.main .footer .foot .foot-link a:hover{
+    color: rgb(242,101,34);
+    cursor: pointer;
+}
+
+.main .footer .foot #p1{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    transform: translate(0,30px);
+}
+
+.main .footer .foot #p1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.main .footer .foot #p1 a:hover{
+    color: rgb(242,101,34);
+}
+
+.main .footer .foot #p2{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    transform: translate(0,80px);
+}
+
+.main .footer .foot #p2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.main .footer .foot #p2 a:hover{
+    color: rgb(242,101,34);
+}
+
+/*  --------------------- MEDIA-QUERIES ---------------------- */
+
+/* ---------- LAPTOP ----------------- */
+@media screen and (max-width:1024px){
+
+    .main .banner-section{
+        background-position: center;
+
+    }
+    .banner-section .header{
+        width: 90%;
+        height: 8vh;
+    }
+    .banner-section .header .inner-head{
+        width: 70%;
+    }
+    .banner-section .header a{
+        font-size: 16px;
+    }
+
+    .banner-section .menu{
+        width: 90%;
+        height: 25vh;
+        margin: auto;
+    }
+
+    .banner-section .menu .inner-menu{
+        width: 100%;
+        height: 8vh;
+    }
+
+    .banner-section .inner-menu .input{
+        width: 370px;
+        height: 5vh;
+        transform: translate(10px,0);
+    }
+    
+    .banner-section .inner-menu .input input{
+        width: 320px;
+        height: 5vh;
+    }
+    
+    .banner-section .inner-menu .input input::placeholder{
+        font-size: 16px;
+    }
+    .banner-section .inner-menu .input button{
+        height: 5vh;
+    }
+    .banner-section .inner-menu .lang{
+        width: 110px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .banner-section .shopping{
+        width: 90%;
+        height: 65vh;
+    }
+
+    .banner-section .shopping .content{
+        width: 100%;
+    }
+    
+    .banner-section .shopping .content h1{
+        font-size: 55px;
+        transform: translate(0,30px);
+    }
+    
+    .banner-section .shopping .content #h1{
+        font-size: 55px;
+        transform: translate(0,-20px);
+    }
+    
+    .banner-section .shopping .content button{
+        transform: translate(0,-40px);
+    }
+    
+    /* -------------FASHION-CARD-SECTION -----------*/
+    .main .fashion{
+        width: 90%;
+    }
+    
+    .main .fashion .card{
+        height: 80vh;
+    }
+    
+    .main .fashion .card .fashionCard{
+        width: 32%;
+    }
+    
+    .main .fashion .card img{
+        width: 100%;
+    }
+    
+    .main .fashion .btn{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+/* ----------------- TABLET ---------------*/
+@media screen and (min-width:768px) and (max-width:1023px) {
+    
+    .main .banner-section{
+        background-position: center;
+    }
+    
+    .banner-section .header{
+        width: 90%;
+        height: 10vh;
+    }
+    .banner-section .header .inner-head{
+        width: 85%;
+    }
+    .banner-section .header a{
+        font-size: 16px;
+    }
+    
+    .banner-section .menu .inner-menu .dropdown{
+        display: none;
+    }
+    
+    .banner-section .menu{
+        width: 90%;
+        height: 25vh;
+        margin: auto;
+    }
+    
+    .banner-section .menu .inner-menu{
+        width: 100%;
+        height: 7vh;
+    }
+    
+    .banner-section .inner-menu .input{
+        width: 300px;
+        height: 7vh;
+        transform: translate(10px,0);
+    }
+    
+    .banner-section .inner-menu .input input{
+        width: 250px;
+        height: 7vh;
+        border-radius: 6px;
+    }
+    
+    .banner-section .inner-menu .input input::placeholder{
+        font-size: 14px;
+    }
+    .banner-section .inner-menu .input button{
+        height: 7vh;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+    
+    .banner-section .shopping{
+        width: 90%;
+        height: 65vh;
+    }
+    
+    .banner-section .shopping .content{
+        width: 100%;
+    }
+    
+    .banner-section .shopping .content h1{
+        font-size: 40px;
+        transform: translate(0,10px);
+    }
+    
+    .banner-section .shopping .content #h1{
+        font-size: 40px;
+        transform: translate(0,-25px);
+    }
+    
+    .banner-section .shopping .content button{
+        transform: translate(0,-50px);
+    }
+    
+    .banner-section .shopping .arr1 button{
+        transform: translate(-10px,-70px);
+    }
+    
+    .banner-section .shopping .arr2 button{
+        transform: translate(0px,-70px);
+    }
+    
+    .main .fashion{
+        width: 90%;
+    }
+    
+    .main .fashion h1{
+        font-size: 40px;
+    }
+    
+    .main .footer{
+        width: 100%;
+        height: 65vh;
+    }
+    
+    .main .footer .foot{
+        width: 90%;
+        height: 50vh;
+    }
+    
+}
+/* -------------- MOBILE ---------------- */
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+    .main .banner-section{
+        background-position: center;
+    }
+    
+    .banner-section .header{
+        display: none;
+    }
+    
+    .banner-section .menu .inner-menu{
+        display: inline-block;
+    }
+
+    .banner-section .menu .inner-menu .img img{
+        width: 50px;
+        height: 36px;
+    }
+    .banner-section .menu .inner-menu .dropdown{
+        display: none;
+    } 
+
+    .banner-section .inner-menu .lang{
+        width: 100px;
+        height: 35px;
+        font-size: 15px;
+        background: none;
+        transform: translate(-3px, -60px);
+    }
+    
+    .banner-section .inner-menu .shop{
+        width: 150px;
+        height: 6vh;
+        transform: translate(130px, -95px);
+    }
+
+    .banner-section .menu .inner-menu .img{
+        transform: translate(-3px,80px);
+    }
+
+    .banner-section .inner-menu .input{
+        width: 210px;
+        height: 7vh;
+        transform: translate(64px,40px);
+    }
+    
+    .banner-section .inner-menu .input input{
+        width: 180px;
+        height: 7vh;
+        border-radius: 6px;
+    }
+    .banner-section .inner-menu .input input::placeholder{
+        font-size: 14px;
+    }
+    .banner-section .inner-menu .input button{
+        height: 7vh;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    .banner-section .shopping{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        width: 90%;
+        height: 50vh;
+        transform: translate(0,100px);
+    }
+    
+    .banner-section .shopping .arr1{
+        width: 15%;
+    }
+    
+    .banner-section .shopping .arr1 button{
+        width: 40px;
+        height: 40px;
+        transform: translate(0px,-70px);
+    }
+    
+    .banner-section .shopping .arr2{
+        width: 15%;
+    }
+    
+    .banner-section .shopping .arr2 button{
+        width: 40px;
+        height: 40px;
+        transform: translate(0px,-70px);
+    }
+    
+    
+    .banner-section .shopping .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+    
+    .banner-section .shopping .content h1{
+        font-size: 26px;
+        transform: translate(0,-15px);
+    }
+    
+    .banner-section .shopping .content #h1{
+        font-size: 26px;
+        transform: translate(0,5px);
+        text-align: center;
+    }
+    
+    .banner-section .shopping .content button{
+        transform: translate(0,30px);
+    }
+
+    /* -------------FASHION-CARD-SECTION -----------*/
+    .main .fashion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 310vh;
+    }
+    
+    .main .fashion h1{
+        width: 90%;
+        min-height: 20vh;
+        font-size: 28px;
+        color: rgb(37,37,37) ;
+    }
+    
+    .main .fashion .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        height: 270vh;
+    }
+    
+    .main .fashion .card .fashionCard{
+        width: 90%;
+        height: 80vh;
+    }
+    
+    .main .fashion .card .fashionCard .title{
+        text-align: center;
+        width: 80%;
+        height: 8vh;
+    }
+    
+    .main .fashion .card .fashionCard .img img{
+        text-align: center;
+        width: 95%;
+    }
+    
+    .main .fashion .card .fashionCard .tag{
+        width: 90%;
+        height: 5vh;
+        transform: translate(0, -5px);
+    }
+    
+    .main .fashion .btn{
+        width: 90%;
+    }
+    
+    
+    .main .electronics{
+        transform: translate(0,50px);
+    }
+    
+    .main .jewellery{
+        transform: translate(0,100px);
+    }
+    
+    .main .loader{
+        width: 80%;
+        height: 20vh;
+    
+    }
+       
+    .main .footer{
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .main .footer .foot{
+        width: 95%;
+        height: 50vh;
+    }
+    
+    .main .footer .foot .input{
+        width: 100%;
+        height: 10vh;
+        border-bottom: 1px solid white;
+    }
+    
+    .main .footer .foot .input input{
+        width: 70%;
+    }
+    
+    .main .footer .foot .input input::placeholder{
+        font-size: 17px;
+    }
+    
+    .main .footer .foot .foot-link{
+        margin: auto;
+        width: 100%;
+        height: 32vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .main .footer .foot .foot-link a{
+        font-size: 17px;
+    }
+    
+    .main .footer .foot #p1{
+        font-size: 18px;
+    }
+    
+    .main .footer .foot #p1 a{
+        font-size: 18px;
+    }
+    
+    .main .footer .foot #p2{
+        font-size: 18px;
+        transform: translate(0,70px);
+    }
+    
+    .main .footer .foot #p2 a{
+        font-size: 18px;
+    }
+        
+}
+
+/* ----------------- LARGE-MOBILE------------------- */
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+
+    .banner-section .inner-menu .lang{
+        width: 100px;
+        height: 35px;
+        font-size: 15px;
+        background: none;
+        transform: translate(10px, -60px);
+    }
+    
+    .banner-section .inner-menu .shop{
+        width: 150px;
+        height: 6vh;
+        transform: translate(160px, -95px);
+    }
+
+    .banner-section .menu .inner-menu .img{
+        transform: translate(10px,75px);
+    }
+
+    .banner-section .menu .inner-menu .img img{
+        width: 40px;
+        height: 30px;
+    }
+
+    .banner-section .inner-menu .input{
+        width: 240px;
+        height: 6vh;
+    }
+
+    .banner-section .inner-menu .input input{
+        width: 240px;
+        height: 6vh;
+    }
+    
+    .banner-section .inner-menu .input input::placeholder{
+        font-size: 15px;
+    }
+    
+    .banner-section .inner-menu .input button{
+        height: 6vh;
+        position: absolute;
+        left: calc(95% - 10px);
+    }
+}
+
